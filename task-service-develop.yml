@@ -6,24 +6,24 @@ spring:
           issuer-uri: http://localhost:9090/auth/realms/mini-project-2
           jwk-set-uri: http://localhost:9090/auth/realms/mini-project-2/protocol/openid-connect/certs
 
-  application:
-    name: task-service
-  jpa:
-    database: POSTGRESQL
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        format_sql: true
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: 2003
-    url: jdbc:postgresql://localhost:5432/task_database
-  sql:
-    init:
-      platform: postgres
+#  application:
+#    name: task-service
+#  jpa:
+#    database: POSTGRESQL
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#    properties:
+#      hibernate:
+#        format_sql: true
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    username: postgres
+#    password: 2003
+#    url: jdbc:postgresql://localhost:5432/task_database
+#  sql:
+#    init:
+#      platform: postgres
 
 server:
   port: 9092
